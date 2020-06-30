@@ -4,9 +4,9 @@ const { Schema } = mongoose;
 
 const PagoSchema = new Schema ({
     afiliado: {type: Schema.Types.ObjectId, ref: Afiliado},
-    fecha: {type: String, required: true},
+    fecha: {type: Date, required: true},
     monto: {type: Number, required: true},
-    año: {type: Number, required: true},
+    anio: {type: Number, required: true},
     mes: {type: Number, required: true},
 })
 
