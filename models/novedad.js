@@ -7,7 +7,8 @@ const NovedadSchema = new Schema({
     asunto: {type: String, required: true},
     texto: {type: String, required: true},
     estado: {type: String, required: true},//pendiente-procesado
-    fecha: {type:Date, required:true}
+    fecha: {type:Date, required:true},
+    quitado: {type:Boolean, required:true}
 })
 
 module.exports = mongoose.model('Novedad', NovedadSchema);
