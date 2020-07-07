@@ -8,6 +8,7 @@ const AfiliadoSchema = new Schema ({
     email: {type: String, required: true},
     imagen: {type: String, required: true},
     telefono: {type: Number, required: true},
+    estado: {type: Boolean, required: true},
 })
 
 module.exports = mongoose.model('Afiliado', AfiliadoSchema);
